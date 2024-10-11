@@ -1,5 +1,61 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-kylelemons-godebug (1.1.0-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + golang-github-kylelemons-godebug-dev: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 26 Nov 2022 03:47:39 +0000
+
+golang-github-kylelemons-godebug (1.1.0-1) unstable; urgency=medium
+
+  [ Martina Ferrari ]
+  * Update dependency on dh-golang.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Jelmer Vernooĳ (Debian Janitor) ]
+  * Use secure copyright file specification URI.
+    Fixes: lintian: insecure-copyright-format-uri
+  * Bump debhelper from old 9 to 12.
+    Fixes: lintian: package-uses-old-debhelper-compat-version
+  * Set debhelper-compat version in Build-Depends.
+    Fixes: lintian: uses-debhelper-compat-file
+  * Change priority extra to priority optional.
+    Fixes: lintian: priority-extra-is-replaced-by-priority-optional
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+    Fixes: lintian: upstream-metadata-file-is-missing
+
+  [ Anthony Fok ]
+  * New upstream version 1.1.0
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Add debian/watch
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Add myself to the list of Uploaders
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+  * Apply "cme fix dpkg" fixes:
+    - Organize debian/control fields
+    - Bump Standards-Version to 4.5.0 (no change)
+    - Add Testsuite: autopkgtest-pkg-go
+  * debian/upstream/metadata: Add Repository and Repository-Browse fields
+
+ -- Anthony Fok <foka@debian.org>  Tue, 14 Jul 2020 23:42:41 -0600
+
+golang-github-kylelemons-godebug (0.0~git20160406.0.eadb3ce-1) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Martín Ferrari ]
+  * New upstream release.
+  * Add myself to Uploaders.
+  * debian/control: Update Standards-Version (no changes).
+  * debian/control: Remove golang-go dependency from -dev package.
+  * debian/control: Replace golang-go with golang-any in Build-Depends.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 03 Nov 2016 23:51:16 +0100
+
+golang-github-kylelemons-godebug (0.0~git20150519.0.21cb378-1) unstable; urgency=medium
+
+  * Initial release (Closes: #804402).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 08 Nov 2015 18:08:02 +1100
